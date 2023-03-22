@@ -69,10 +69,10 @@ internal class Program
                 break;
 
             case 2:
-                ArrayList numberList = new() { 124, 149, 128, 45, 67, 1092, 112, 15 };
-                int[] orderedNumberList = numberList.OfType<int>().OrderBy(number => number).ToArray();
+                string[] arr = {"45", "12", "56", "23", "89", "02", "34"};
+                var sortedArr = arr.OrderBy(x => int.Parse(x));
                 Console.Write("\nArray list içerisindeki bütün sayılar sıralanıyor...\n");
-                WriteValues(orderedNumberList);
+                WriteValues(sortedArr);
                 RestartProgram();
                 break;
 
